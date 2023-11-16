@@ -71,7 +71,7 @@ body{
                     .including{
                         width: 100%;
                         height: 20%;
-                        gap: 30px;
+                        gap: 19px;
                         align-items: center;
                         justify-content: center;
                         
@@ -82,16 +82,20 @@ body{
                         background-color: #417F56;
                         border-radius: 6px;
                         align-items: end;
-                        padding-bottom: 20px;     
+                        padding-bottom: 30px;     
                         justify-content: center;                
+                    }
+                    .middle-images{      
+                        justify-content: center;            
+                    img{
+                        width: 120%;
                     }
                 }
                 .click{
                     width: 100%;
                     height: 20%;
                     justify-content: space-around;
-                    gap: 40px;
-                    grid-row: 100%;
+                    gap: 60px;
                     button{
                         width: 155px;
                         height: 48px;
@@ -105,6 +109,26 @@ body{
         }
     }
         }
+        // End of middle and menu codes
+
+
+
+
+        // The beginning of the last code
+        // .end{
+        //     .branches{
+        //         .branch{
+        //             img{
+                        
+        //             }
+        //         }
+        //     }
+        // }
+
+
+
+        // End of the last codes
     }
 }
-        // End of middle and menu codes
+}
+        
