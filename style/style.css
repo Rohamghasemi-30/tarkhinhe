@@ -76,42 +76,88 @@ body main header nav ul li a {
   color: #717171;
   font-family: Estedad-Light;
 }
+body main header nav ul li a:hover {
+  color: #23da60;
+}
 body main header nav ul .home a {
   font-size: 20px;
   font-family: Estedad-SemiBold;
   color: #417F56;
 }
-body main header .middle .food {
-  background-color: darkgray;
-  justify-content: center;
+body main header nav ul .home a:hover {
+  color: #417F56;
 }
-body main header .middle .food img {
+body main header .middle {
   width: 100%;
 }
-body main header .middle .type {
+body main header .middle .food {
+  width: 100%;
+  height: 54%;
+  background-image: url(/images/Slider.png);
+  background-size: cover;
+  justify-content: center;
+  align-items: center;
+}
+body main header .middle .food .typeing {
+  height: 60%;
+  width: 50%;
+  justify-content: center;
+  align-items: end;
+  flex-wrap: wrap;
+  padding-left: 50px;
+}
+body main header .middle .food .typeing h1 {
+  width: 80%;
+  color: #ffffff;
+  font-family: Estedad-SemiBold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+body main header .middle .food .typeing .food__box-food {
+  height: 30%;
+  justify-content: start;
+  align-items: center;
+}
+body main header .middle .food .typeing .food__box-food .box-order {
+  width: 184px;
+  height: 40px;
+  background-color: #417F56;
+  justify-content: center;
+  align-items: center;
+  font-size: 16px;
+  font-family: Estedad-SemiBold;
+  border-radius: 8px;
+}
+body main header .middle .food .typeing .food__box-food .box-order a {
+  color: #ffffff;
+  text-decoration: none;
+}
+body main header .type {
   width: 100%;
   height: 20%;
   justify-content: center;
   align-items: center;
 }
-body main header .middle .type h3 {
+body main header .type h3 {
   color: #353535;
   font-family: Estedad-SemiBold;
 }
-body main header .middle .menu {
+body main header .menu {
   height: 100%;
+  width: 100%;
   justify-content: center;
   align-items: center;
   padding-top: 110px;
 }
-body main header .middle .menu .including {
+body main header .menu .including {
   width: 100%;
   height: 20%;
   gap: 19px;
   align-items: center;
   justify-content: center;
 }
-body main header .middle .menu .box-food {
+body main header .menu .box-food {
   width: 295px;
   height: 160px;
   background-color: #417F56;
@@ -120,19 +166,13 @@ body main header .middle .menu .box-food {
   padding-bottom: 30px;
   justify-content: center;
 }
-body main header .middle .menu .middle-images {
-  justify-content: center;
-}
-body main header .middle .menu .middle-images img {
-  width: 120%;
-}
-body main header .middle .menu .click {
+body main header .menu .click {
   width: 100%;
   height: 20%;
   justify-content: space-around;
-  gap: 60px;
+  align-items: end;
 }
-body main header .middle .menu .click button {
+body main header .menu .click button {
   width: 155px;
   height: 48px;
   border-radius: 4px;
@@ -140,6 +180,112 @@ body main header .middle .menu .click button {
   color: #353535;
   font-size: 18px;
   font-family: Estedad-Regular;
+}
+body main header .menu .click button:hover {
+  color: #417F56;
+}
+body main header .menu .middle-images {
+  background-color: #23da60;
+  height: 75%;
+  width: 100%;
+  background-image: url(/images/about.png);
+  background-size: cover;
+  justify-content: start;
+}
+body main header .menu .middle-images .about {
+  width: 90%;
+  height: 100%;
+  justify-content: end;
+  align-items: center;
+}
+body main header .menu .middle-images .about .Property {
+  width: 55%;
+  height: 50%;
+  justify-content: start;
+}
+body main header .menu .middle-images .about .Property .Property__icon-box {
+  flex-wrap: wrap;
+  width: 40%;
+  justify-content: center;
+  gap: 30%;
+}
+body main header .menu .middle-images .about .subject {
+  color: #ffffff;
+  width: 38%;
+  height: 80%;
+  justify-content: end;
+  align-items: end;
+  flex-wrap: wrap;
+}
+body main header .menu .middle-images .about .subject h3 {
+  font-size: 20px;
+  font-family: Estedad-SemiBold;
+}
+body main header .menu .middle-images .about .subject p {
+  width: 100%;
+  font-size: 18px;
+  text-align: justify;
+  font-family: Estedad-Light;
+  direction: rtl !important;
+}
+body main header .menu .middle-images .about .subject .Description {
+  width: 100%;
+}
+body main header .menu .middle-images .about .subject .Description .more-information {
+  width: 184px;
+  height: 40px;
+  border: 1px solid #FFF;
+  border-radius: 4px;
+  justify-content: center;
+  align-items: center;
+  font-family: Estedad-Regular;
+  gap: 5px;
+}
+body main .end .walk {
+  justify-content: center;
+  align-items: end;
+  height: 158;
+  font-family: Estedad-SemiBold;
+}
+body main .end .walk h3 {
+  color: #000000;
+  font-size: 24px;
+}
+body main .end .branches {
+  height: 100%;
+  justify-content: center;
+  gap: 10px;
+  align-items: start;
+}
+body main .end .branches .Inside {
+  height: 10%;
+  width: 285px;
+  background-size: cover;
+}
+body main .end .branches .box-branch {
+  width: 288px;
+  height: 344px;
+  border: 1px solid #CBCBCB;
+  font-size: 20px;
+  color: #353535;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: start;
+  border-radius: 4px;
+}
+body main .end .branches .box-branch img {
+  height: 230px;
+}
+body main .end .branches .box-branch h3 {
+  color: #000000;
+  font-size: 20px;
+  font-family: Estedad-SemiBold;
+}
+body main .end .branches .box-branch p {
+  width: 80%;
+  font-size: 14px;
+  font-family: Estedad-Regular;
+  text-align: center;
 }
 
 /*# sourceMappingURL=style.css.map */

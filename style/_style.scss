@@ -28,6 +28,9 @@ body{
                             color: #717171;
                             font-family: Estedad-Light;
                         }
+                        a:hover{
+                             color: #23da60;
+                        }
                     }
                     .home{
                         a{
@@ -35,6 +38,11 @@ body{
                             font-family: Estedad-SemiBold;
                             color: #417F56;
                         }           
+                }
+                .home{
+                    a:hover{
+                        color: #417F56;
+                    }
                 }
                 }  
             }
@@ -44,13 +52,53 @@ body{
 
 
             // Start middle and menu codes
-            .middle{
+            .middle{    
+            width: 100%;
                 .food{
-                    background-color: darkgray;
-                    justify-content: center;
-                    img{
                         width: 100%;
-                    }
+                        height: 54%;
+                        background-image: url(/images/Slider.png);
+                        background-size: cover;
+                        justify-content: center;
+                        align-items: center;
+                       .typeing{
+                        height: 60%;
+                        width: 50%;
+                        justify-content: center;
+                        align-items: end;                  
+                        flex-wrap: wrap;
+                        padding-left: 50px;
+                        h1{
+                        width: 80%;
+                        color: #ffffff;
+                        font-family: Estedad-SemiBold;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        }
+                        .food__box-food{
+                            height: 30%;
+                            justify-content: start;
+                            align-items: center;
+                            
+                            .box-order{
+                                width: 184px;
+                                height: 40px;
+                                background-color: #417F56;
+                                justify-content: center;
+                                align-items: center;
+                                font-size: 16px;
+                                font-family: Estedad-SemiBold;
+                                border-radius: 8px;
+                                a{
+                                    color: #ffffff;
+                                    text-decoration: none;
+                                }
+                            }
+                        }
+                       }
+                   
+                }
                 }
                 .type{
                     width: 100%;
@@ -64,7 +112,8 @@ body{
                     }
                 }
                 .menu{
-                    height: 100%;                    
+                    height: 100%;     
+                    width: 100%;               
                     justify-content: center;
                     align-items: center;
                     padding-top: 110px;
@@ -83,19 +132,14 @@ body{
                         border-radius: 6px;
                         align-items: end;
                         padding-bottom: 30px;     
-                        justify-content: center;                
+                        justify-content: center;             
                     }
-                    .middle-images{      
-                        justify-content: center;            
-                    img{
-                        width: 120%;
-                    }
-                }
+                    
                 .click{
                     width: 100%;
                     height: 20%;
                     justify-content: space-around;
-                    gap: 60px;
+                    align-items: end;
                     button{
                         width: 155px;
                         height: 48px;
@@ -105,30 +149,138 @@ body{
                         font-size: 18px;
                         font-family: Estedad-Regular;
                     }
+                        button:hover{
+                            color: #417F56;
+                        }
                         
         }
+        .middle-images{   
+            background-color: #23da60;
+            height: 75%;   
+            width: 100%; 
+            background-image: url(/images/about.png);
+            background-size: cover;  
+            justify-content: start;    
+            .about{
+                width: 90%;
+                height: 100%;
+                justify-content: end; 
+                align-items: center;
+                .Property{
+                    width: 55%;
+                    height: 50%;
+                    justify-content: start;
+                    .Property__icon-box{
+                        flex-wrap: wrap;
+                        width: 40%;
+                        justify-content: center;
+                        gap: 30%;
+                    }                  
+                }
+                .subject{
+                    color: #ffffff;
+                    width: 38%;
+                    height: 80%;
+                    justify-content: end;
+                    align-items: end;
+                    flex-wrap: wrap;
+                    h3{
+                        font-size: 20px;
+                        font-family: Estedad-SemiBold;
+                    }
+                    p{
+                        width: 100%;
+                        font-size: 18px;
+                        text-align: justify;
+                        font-family: Estedad-Light;
+                        direction: rtl !important;
+                    }
+                    .Description{
+                        width: 100%;
+                        .more-information{
+                            width: 184px;
+                            height: 40px;
+                            border: 1px solid #FFF;
+                            border-radius: 4px;
+                            justify-content: center;
+                            align-items: center;
+                            font-family: Estedad-Regular;
+                            gap: 5px;
+                        }
+                    }
+                }
+            }
+    }
     }
         }
+
+
+
+        
         // End of middle and menu codes
 
 
 
 
-        // The beginning of the last code
-        // .end{
-        //     .branches{
-        //         .branch{
-        //             img{
+        //  The beginning of the last code
+
+
+
+         .end{
+            .walk{
+                justify-content: center;
+                align-items: end;
+                height: 158;
+                font-family: Estedad-SemiBold;
+                h3{
+                    color: #000000;
+                    font-size: 24px
+                }
+            }
+            .branches{
+                height: 100%;
+                justify-content: center;
+                gap: 10px;
+                align-items: start;
+                .Inside{
+                    height: 10%;
+                    width: 285px;
+                    background-size: cover;
+                }
+                 .box-branch{
+                    width: 288px;
+                    height: 344px;
+                    border: 1px solid #CBCBCB;
+                    font-size: 20px;
+                    color: #353535;
+                    flex-wrap: wrap;
+                    justify-content: center;
+                    align-items: start;
+                    border-radius: 4px ;
+                    
+                     img{
+                        height: 230px;
+                     }
+                     h3{
+                        color: #000000;
+                        font-size: 20px;
+                        font-family: Estedad-SemiBold;
                         
-        //             }
-        //         }
-        //     }
-        // }
+                     }
+                     p{
+                        width: 80%;
+                        font-size: 14px;
+                        font-family: Estedad-Regular;
+                        text-align: center;
+                     }
+                 }
+             }
+         }
 
 
 
         // End of the last codes
     }
 }
-}
+
         
