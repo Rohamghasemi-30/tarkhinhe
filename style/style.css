@@ -13,6 +13,19 @@
   display: flex;
 }
 
+.opasity {
+  color: #ADADAD;
+  font-family: Estedad-Light;
+  font-weight: 400;
+  font-size: 10px;
+}
+
+.link {
+  color: #ffffff;
+  font-family: Estedad-Light;
+  text-decoration: none;
+}
+
 @font-face {
   src: url(/fonts/Estedad-Black.ttf);
   font-family: Estedad-Black;
@@ -90,74 +103,78 @@ body main header nav ul .home a:hover {
 body main header .middle {
   width: 100%;
 }
-body main header .middle .food {
-  width: 100%;
-  height: 54%;
-  background-image: url(/images/Slider.png);
-  background-size: cover;
-  justify-content: center;
-  align-items: center;
-}
-body main header .middle .food .typeing {
-  height: 60%;
-  width: 50%;
-  justify-content: center;
-  align-items: end;
-  flex-wrap: wrap;
-  padding-left: 50px;
-}
-body main header .middle .food .typeing h1 {
-  width: 80%;
-  color: #ffffff;
-  font-family: Estedad-SemiBold;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-body main header .middle .food .typeing .food__box-food {
-  height: 30%;
-  justify-content: start;
-  align-items: center;
-}
-body main header .middle .food .typeing .food__box-food .box-order {
+body main header .middle .box-slidder .buy-food {
   width: 184px;
   height: 40px;
-  background-color: #417F56;
+  padding: 8px 16px;
   justify-content: center;
   align-items: center;
-  font-size: 16px;
-  font-family: Estedad-SemiBold;
+  gap: 8px;
+  background-color: #417F56;
   border-radius: 8px;
 }
-body main header .middle .food .typeing .food__box-food .box-order a {
-  color: #ffffff;
+body main header .middle .box-slidder .buy-food a {
+  color: white;
   text-decoration: none;
 }
-body main header .type {
+body main header .middle .box-slidder .images {
+  width: 100%;
+  height: 400px;
+}
+body main header .middle .box-slidder .box-buy {
+  width: 100%;
+  height: 90px;
+  justify-content: center;
+}
+body main header .middle .box-slidder .carousel-caption {
+  flex-direction: column;
+  align-items: center;
+  gap: 50px;
+}
+body main header .middle .box-slidder .carousel-indicators {
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  top: 420px;
+}
+body main header .middle .box-slidder .carousel-indicators .slider-food {
+  width: 20%;
+  background-image: url(/images/Rectangle\ 2.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  justify-content: center;
+}
+body main header .middle .box-slidder .carousel-indicators .slider-food .circle {
+  width: 10px;
+  height: 10px;
+  background-color: #417F56;
+  border-radius: 50%;
+}
+body main .type {
   width: 100%;
   height: 20%;
   justify-content: center;
   align-items: center;
 }
-body main header .type h3 {
+body main .type h3 {
   color: #353535;
   font-family: Estedad-SemiBold;
 }
-body main header .menu {
+body main .menu {
   height: 100%;
   width: 100%;
   justify-content: center;
   align-items: center;
   padding-top: 110px;
 }
-body main header .menu .including {
+body main .menu .including {
   width: 100%;
   height: 20%;
   gap: 19px;
   align-items: center;
   justify-content: center;
 }
-body main header .menu .box-food {
+body main .menu .box-food {
   width: 295px;
   height: 160px;
   background-color: #417F56;
@@ -166,13 +183,13 @@ body main header .menu .box-food {
   padding-bottom: 30px;
   justify-content: center;
 }
-body main header .menu .click {
+body main .menu .click {
   width: 100%;
   height: 20%;
   justify-content: space-around;
   align-items: end;
 }
-body main header .menu .click button {
+body main .menu .click button {
   width: 155px;
   height: 48px;
   border-radius: 4px;
@@ -181,10 +198,10 @@ body main header .menu .click button {
   font-size: 18px;
   font-family: Estedad-Regular;
 }
-body main header .menu .click button:hover {
+body main .menu .click button:hover {
   color: #417F56;
 }
-body main header .menu .middle-images {
+body main .menu .middle-images {
   background-color: #23da60;
   height: 75%;
   width: 100%;
@@ -192,24 +209,24 @@ body main header .menu .middle-images {
   background-size: cover;
   justify-content: start;
 }
-body main header .menu .middle-images .about {
+body main .menu .middle-images .about {
   width: 90%;
   height: 100%;
   justify-content: end;
   align-items: center;
 }
-body main header .menu .middle-images .about .Property {
+body main .menu .middle-images .about .Property {
   width: 55%;
   height: 50%;
   justify-content: start;
 }
-body main header .menu .middle-images .about .Property .Property__icon-box {
+body main .menu .middle-images .about .Property .Property__icon-box {
   flex-wrap: wrap;
   width: 40%;
   justify-content: center;
   gap: 30%;
 }
-body main header .menu .middle-images .about .subject {
+body main .menu .middle-images .about .subject {
   color: #ffffff;
   width: 38%;
   height: 80%;
@@ -217,21 +234,21 @@ body main header .menu .middle-images .about .subject {
   align-items: end;
   flex-wrap: wrap;
 }
-body main header .menu .middle-images .about .subject h3 {
+body main .menu .middle-images .about .subject h3 {
   font-size: 20px;
   font-family: Estedad-SemiBold;
 }
-body main header .menu .middle-images .about .subject p {
+body main .menu .middle-images .about .subject p {
   width: 100%;
   font-size: 18px;
   text-align: justify;
   font-family: Estedad-Light;
   direction: rtl !important;
 }
-body main header .menu .middle-images .about .subject .Description {
+body main .menu .middle-images .about .subject .Description {
   width: 100%;
 }
-body main header .menu .middle-images .about .subject .Description .more-information {
+body main .menu .middle-images .about .subject .Description .more-information {
   width: 184px;
   height: 40px;
   border: 1px solid #FFF;
@@ -240,6 +257,9 @@ body main header .menu .middle-images .about .subject .Description .more-informa
   align-items: center;
   font-family: Estedad-Regular;
   gap: 5px;
+}
+body main .end {
+  flex-direction: column;
 }
 body main .end .walk {
   justify-content: center;
@@ -286,6 +306,420 @@ body main .end .branches .box-branch p {
   font-size: 14px;
   font-family: Estedad-Regular;
   text-align: center;
+}
+body main .end footer {
+  width: 100%;
+  height: 319px;
+  background-image: url(/images/Footer.png);
+}
+body main .end footer .right-side {
+  direction: rtl;
+  justify-content: center;
+}
+body main .end footer .right-side .easy {
+  align-items: center;
+  justify-content: space-around;
+  width: 60%;
+  height: 250px;
+  direction: rtl;
+  color: #ffffff;
+}
+body main .end footer .right-side .easy h3 {
+  font-size: 18px;
+  font-family: Estedad-ExtraBold;
+}
+body main .end footer .right-side .easy h3 ul {
+  width: 200px;
+  justify-content: end;
+  flex-direction: column;
+  gap: 25px;
+  padding: 10px 20px 0px 0px;
+}
+body main .end footer .right-side .easy h3 ul li {
+  font-size: 12px;
+}
+body main .end footer .right-side .easy h3 ul li a {
+  font-family: Estedad-Light;
+  color: white;
+  text-decoration: none;
+}
+body main .end footer .right-side .easy h3 ul li a:hover {
+  color: #417F56;
+}
+body main .end footer .right-side .easy .follow {
+  align-items: end;
+  height: 45px;
+  gap: 20px;
+}
+body main .end footer .right-side .easy .box-input {
+  flex-direction: column;
+  gap: 10px;
+  padding-top: 26px;
+}
+body main .end footer .right-side .easy .box-input .inputs {
+  width: 276px;
+  height: 40px;
+  border-radius: 8px;
+  background-color: rgba(113, 113, 113, 0);
+  border: none;
+  padding: 10px;
+  color: white;
+  font-family: Estedad-ExtraLight;
+  border: 1px solid #717171;
+}
+body main .end footer .right-side .easy .box-input .inputs:focus {
+  outline: none;
+}
+body main .end footer .right-side .easy .left-side {
+  height: 322px;
+  flex-direction: column;
+  justify-content: end;
+  gap: 15px;
+  padding-right: 20px;
+}
+body main .end footer .right-side .easy .left-side .sms {
+  background-color: rgba(0, 0, 0, 0);
+  border-radius: 4px;
+  border: 1px solid #717171;
+  font-family: Estedad-ExtraLight;
+  color: #ffffff;
+  padding: 15px;
+}
+body main .end footer .right-side .easy .left-side .sms:focus {
+  outline: none;
+}
+body main .end footer .right-side .easy .left-side .send {
+  direction: ltr;
+}
+body main .end footer .right-side .easy .left-side .send button {
+  width: 183px;
+  height: 40px;
+  background-color: rgba(0, 0, 0, 0);
+  border-radius: 4px;
+  border: 1px solid #717171;
+  font-family: Estedad-ExtraLight;
+  color: #ffffff;
+}
+body main nav {
+  width: 100%;
+  height: 115px;
+  justify-content: center;
+  align-items: center;
+  gap: 54px;
+}
+body main nav .box-icon {
+  gap: 8px;
+}
+body main nav .box-icon svg {
+  width: 26px;
+  height: 26px;
+  background-color: #e5f2e9;
+  border-radius: 5px;
+}
+body main nav ul {
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+  width: 100%;
+}
+body main nav ul li a {
+  text-decoration: none;
+  color: #717171;
+  font-family: Estedad-Light;
+}
+body main nav ul li a:hover {
+  color: #417f56;
+}
+body main nav ul .Akbatan a {
+  font-size: 20px;
+  font-family: Estedad-SemiBold;
+  color: #417f56;
+  border-bottom: 2px solid #417f56;
+}
+body main nav ul .Akbatan a:hover {
+  color: #417f56;
+}
+body main .midlle .slider {
+  width: 100%;
+  height: 340px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url(/images/Slider.png);
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+}
+body main .midlle .slider h1 {
+  text-align: center;
+  color: #ffffff;
+  font-family: Estedad-SemiBold;
+}
+body main .midlle .buy-food {
+  width: 184px;
+  height: 40px;
+  padding: 8px 16px;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  background-color: #417f56;
+  border-radius: 8px;
+}
+body main .menu-food {
+  direction: rtl;
+  color: #353535;
+  font-family: Estedad-SemiBold;
+  flex-direction: column;
+}
+body main .menu-food .including {
+  justify-content: center;
+  gap: 50px;
+}
+body main .menu-food .including .box-card {
+  height: 410px;
+  width: 250px;
+  flex-direction: column;
+  gap: 8px;
+  border-radius: 8px;
+  border: 1px solid var(--neutral-cbcbcb, #cbcbcb);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+body main .menu-food .including .box-card h3 {
+  color: #353535;
+  text-align: center;
+}
+body main .menu-food .including .box-card .type-right {
+  gap: 5px;
+  padding: 7px;
+}
+body main .menu-food .including .box-card .point {
+  gap: 5px;
+}
+body main .menu-food .including .box-card .point .five {
+  color: #000000;
+  font-size: 12px;
+  font-family: Estedad-SemiBold;
+}
+body main .menu-food .including .box-card .btn {
+  justify-content: center;
+}
+body main .menu-food .including .box-card .btn button {
+  width: 90%;
+  height: 40px;
+  border: none;
+  background-color: #417f56;
+  border-radius: 8px;
+}
+body main .menu-food .including .box-card .type-left {
+  direction: ltr;
+}
+body main .part-end {
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+  gap: 40px;
+  width: 100%;
+  flex-direction: column;
+}
+body main .part-end .box-show {
+  background-color: #ffffff;
+  width: 184px;
+  height: 40px;
+  gap: 14px;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #417f56;
+  border-radius: 4px;
+  font-family: Estedad-Light;
+  color: #417f56;
+}
+body main .color-gn {
+  background-color: #417f56;
+}
+body main .color-gn .box-card {
+  background-color: #ffffff;
+}
+body main .color-gn .color-wt {
+  color: #ffffff;
+}
+body .branch-images {
+  width: 100%;
+  height: 315px;
+  justify-content: center;
+  align-items: end;
+  background-image: url(/images/branch\ picture.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+body .branch-images .box-information {
+  width: 810px;
+  height: 130px;
+  border-radius: 8px;
+  border: 3px solid #417f56;
+  background-color: #ffffff;
+  position: relative;
+  top: 60px;
+}
+body .branch-images .box-information .icons {
+  height: 40%;
+  justify-content: space-around;
+  align-items: center;
+}
+body .branch-images .topic {
+  width: 100%;
+  flex-direction: row;
+  justify-content: space-evenly;
+  gap: 20px;
+  font-family: Estedad-Light;
+}
+body .branch-images .topic .number {
+  flex-direction: column;
+}
+body .branch-images .topic .place {
+  flex-direction: column;
+  width: 30%;
+  align-items: start;
+}
+body .branch-images .topic .place p {
+  text-align: justify;
+}
+body .users {
+  height: 140px;
+  align-items: end;
+  justify-content: center;
+  font-family: Estedad-SemiBold;
+  padding-top: 50px;
+}
+body .Comments-users {
+  justify-content: space-evenly;
+  gap: 80px;
+}
+body .Comments-users .Comments-users__box-users {
+  height: 200px;
+  width: 570px;
+  border: 1px solid #cbcbcb;
+  border-radius: 8px;
+  direction: rtl;
+}
+body .Comments-users .Comments-users__box-users .Comments-users__type {
+  justify-content: end;
+  padding-top: 10px;
+  gap: 10px;
+}
+body .Comments-users .Comments-users__box-users .Comments-users__type img {
+  width: 80px;
+  height: 80px;
+}
+body .Comments-users .Comments-users__box-users .Comments-users__type p {
+  font-family: Estedad-Light;
+  width: 80%;
+}
+body .Comments-users .Comments-users__box-users .user-name {
+  flex-direction: column;
+  align-items: center;
+}
+body .Comments-users .Comments-users__box-users .user-name p {
+  font-size: 14px;
+  font-family: Estedad-Regular;
+  width: 93%;
+}
+body .Comments-users .Comments-users__box-users .point-user {
+  width: 95%;
+  justify-content: end;
+  gap: 5px;
+}
+body footer {
+  width: 100%;
+  height: 319px;
+  background-image: url(/images/Footer.png);
+}
+body footer .right-side {
+  direction: rtl;
+  justify-content: center;
+}
+body footer .right-side .easy {
+  align-items: center;
+  justify-content: space-around;
+  width: 60%;
+  height: 250px;
+  direction: rtl;
+  color: #ffffff;
+}
+body footer .right-side .easy h3 {
+  font-size: 18px;
+  font-family: Estedad-ExtraBold;
+}
+body footer .right-side .easy h3 ul {
+  width: 200px;
+  justify-content: end;
+  flex-direction: column;
+  gap: 25px;
+  padding: 10px 20px 0px 0px;
+}
+body footer .right-side .easy h3 ul li {
+  font-size: 12px;
+}
+body footer .right-side .easy h3 ul li a {
+  font-family: Estedad-Light;
+  color: white;
+  text-decoration: none;
+}
+body footer .right-side .easy h3 ul li a:hover {
+  color: #417f56;
+}
+body footer .right-side .easy .follow {
+  align-items: end;
+  height: 45px;
+  gap: 20px;
+}
+body footer .right-side .easy .box-input {
+  flex-direction: column;
+  gap: 10px;
+  padding-top: 26px;
+}
+body footer .right-side .easy .box-input .inputs {
+  width: 276px;
+  height: 40px;
+  border-radius: 8px;
+  background-color: rgba(113, 113, 113, 0);
+  border: none;
+  padding: 10px;
+  color: white;
+  font-family: Estedad-ExtraLight;
+  border: 1px solid #717171;
+}
+body footer .right-side .easy .box-input .inputs:focus {
+  outline: none;
+}
+body footer .right-side .easy .left-side {
+  height: 322px;
+  flex-direction: column;
+  justify-content: end;
+  gap: 15px;
+  padding-right: 20px;
+}
+body footer .right-side .easy .left-side .sms {
+  background-color: rgba(0, 0, 0, 0);
+  border-radius: 4px;
+  border: 1px solid #717171;
+  font-family: Estedad-ExtraLight;
+  color: #ffffff;
+  padding: 15px;
+}
+body footer .right-side .easy .left-side .sms:focus {
+  outline: none;
+}
+body footer .right-side .easy .left-side .send {
+  direction: ltr;
+}
+body footer .right-side .easy .left-side .send button {
+  width: 183px;
+  height: 40px;
+  background-color: rgba(0, 0, 0, 0);
+  border-radius: 4px;
+  border: 1px solid #717171;
+  font-family: Estedad-ExtraLight;
+  color: #ffffff;
 }
 
 /*# sourceMappingURL=style.css.map */
